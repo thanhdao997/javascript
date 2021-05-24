@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo1"></p>
+<script>
+document.getElementById("demo1").innerHTML =
+"Hello World";
+</script>
+
+<p id="demo2"></p>
+<script>
+document.getElementById("demo2").innerHTML = 100+200;
+</script>
+
+<p id="demo3"></p>
+<script>
+var x, y, z;  
+a = 30;        
+b = 40;        
+c = a + b;   
+
+document.getElementById("demo3").innerHTML =
+"Giá trị của C là " + c + ".";  
+</script>
+
+<p id="demo4">
+	<script>
+		var x, y, z;
+		x = 50;
+		y = 70;
+		z = x * y;
+
+	document.getElementById("demo4").innerHTML = "Giá trị của Z là" z;	
+	</script>
+
+<p id="demo5"></p>
+
+<script>
+var i = 1;
+for (var i = 5; i < 30; i++) {
+
+}
+document.getElementById("demo5").innerHTML = i;
+</script>
+
+<p id="demo6"></p>
+	<script>
+		var y =  30 + 6 + "X";
+		document.getElementById("demo6").innerHTML = y;
+	</script>
+
+<p id="demo7">
+	<script>				
+		var y = "X" + 30 + 6;
+		document.getElementById("demo7").innerHTML = y;
+	</script>	
+
+<p id="demo8">
+	<script>
+		var x = myFunction(5, 6);
+             document.getElementById("demo8").innerHTML = x;    
+                
+		function myFunction(a, b){
+			return a * b;
+		}
+	</script>			
+<p id="demo9">
+	<script>
+			function toCelsius(f) {
+  				return (5/9) * (f-32);
+			}
+			document.getElementById("demo9").innerHTML = toCelsius(100);
+	</script>
+<p id="demo10"></p>
+
+<script>
+document.getElementById("demo10").innerHTML =
+"Nhiệt độ là " + toCelsius(77) + "*C";
+
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+} 
+</script>
+
+<p id="demo11">
+	<script>
+		var car = {type:"ACB", model:"500", color:"red"};
+		var car = {type:"ACB", model:"500", color:"white"};
+		var car = {type:"ACB", model:"500", color:"yellow"};
+
+		document.getElementById("demo11").innerHTML = "chiếc xe có màu " + car.color;
+	</script>	
+<p id="demo12">
+	<script>
+		var person = {firstName:"Nguyễn", lastName:"A", age:"23", hairColor:"black" }
+		document.getElementById("demo12").innerHTML = person.firstName + person.lastName + "có tóc màu " + person.hairColor;
+		
+	</script>
+<p id="demo13">
+<script>
+		var person = {
+		firstName:"Nguyễn", 
+		lastName:"A", 
+		age:"23", 
+		hairColor:"black"
+		fullName : function(){
+			return this.firstName +" "+ this.lastName;
+		}
+	};
+	document.getElementById("demo13").innerHTML = person.fullName();
+</script>	
+
+<p id="demo14"></p>
+<button onclick="document.getElementById('demo').innerHTML=Date()">Bây giờ là</button><br>
+
+<button onclick="this.innerHTML=Date()">Bây giờ là</button>
+
+<p id="demo15">
+	<script>
+		var txt = "qwertyuipp";
+		var sln = txt.length;
+		document.getElementById("demo15").innerHTML = sln;
+	</script>
+
+<p id="demo16">
+	<script>
+		var str = "Please locate 'where' locate occurs!";
+		var pos = str.indexOf("where");
+		document.getElementById("demo16").innerHTML = pos;
+	</script>
+
+<p id="demo17"></p>
+
+<script>
+var x = 'hochtml';
+document.getElementById("demo17").innerHTML =
+  x.toString() + "<br>" +
+   ('hochtml').toString() + "<br>" +
+   ('hoc' + 'html').toString();
+</script>	
+
+<p id="demo18"></p>
+
+<script>
+var x = 3.14;
+document.getElementById("demo18").innerHTML =
+  x.toExponential() + "<br>" + 
+  x.toExponential(2) + "<br>" + 
+  x.toExponential(4) + "<br>" + 
+  x.toExponential(6);
+</script>
+
+<p id="demo19"></p>
+
+<script>
+var x = 3.14;
+document.getElementById("demo19").innerHTML =
+  x.toFixed(0) + "<br>" +
+  x.toFixed(2) + "<br>" +
+  x.toFixed(4) + "<br>" +
+  x.toFixed(6);
+</script>
+
+<p id="demo20"></p>
+
+<script>
+var x = 3.14;
+document.getElementById("demo20").innerHTML = 
+  x.toPrecision() + "<br>" +
+  x.toPrecision(2) + "<br>" +
+  x.toPrecision(4) + "<br>" +
+  x.toPrecision(6);  
+</script>
+
+<p id="demo21"></p>
+<script>
+var x = 3.14;
+
+document.getElementById("demo21").innerHTML = 
+  x.valueOf() + "<br>" +
+  (3.14).valueOf() + "<br>" +
+  (3 + 0.14).valueOf();
+</script>
+
+<p id="demo22"></p>
+
+<script>
+var fruit = ["Cam", "Táo", "Lê"];
+cars[0] = "Hồng";
+document.getElementById("demo22").innerHTML = fruit;
+</script>
+</body>
+</html>

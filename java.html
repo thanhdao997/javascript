@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="demo1"></p>
+
+<script>
+var txt = "";
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+document.getElementById("demo1").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt = txt + value + "<br>"; 
+}
+</script>
+
+<p id="demo2"></p>
+
+<script>
+var numbers1 = [45, 4, 9, 16, 25];
+var numbers2 = numbers1.map(myFunction);
+
+document.getElementById("demo2").innerHTML = numbers2;
+
+function myFunction(value, index, array) {
+  return value * 2;
+}
+</script>
+
+<p id="demo3"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo3").innerHTML = d;
+</script>
+
+<p id="demo4"></p>
+
+<script>
+var d = new Date(2018, 11, 24, 10, 33, 30, 0);
+document.getElementById("demo4").innerHTML = d;
+</script>
+
+<p id="demo5"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo5").innerHTML = d.toString();
+</script>
+
+
+<p id="demo6"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo6").innerHTML = d.toDateString();
+</script>
+
+<p id="demo7">
+<script>
+var d = new Date();
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+document.getElementById("demo7").innerHTML = months[d.getMonth()];
+</script>
+
+<p id="demo8"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo8").innerHTML = d.getDate();
+</script>
+
+<p id="demo9"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo9").innerHTML = d.getHours();
+</script>
+
+<p id="demo10"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo10").innerHTML = d.getMinutes();
+</script>
+
+<p id="demo11"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo11").innerHTML = d.getDay();
+</script>
+
+<p id="demo12"></p>
+
+<script>
+var d = new Date();
+d.setMonth(11);
+document.getElementById("demo12").innerHTML = d;
+</script>
+
+<p id="demo13"></p>
+
+<script>
+var d = new Date();
+d.setDate(15);
+document.getElementById("demo13").innerHTML = d;
+</script>
+
+<p id="demo14"></p>
+
+<script>
+var today, someday, text;
+today = new Date();
+someday = new Date();
+someday.setFullYear(2100, 0, 14);
+
+if (someday > today) {
+  text = "Today is before January 14, 2100.";
+} else {
+  text = "Today is after January 14, 2100.";
+}
+document.getElementById("demo14").innerHTML = text;
+</script>
+
+<p id="demo15"></p>
+
+<script></script>
+</body>
+</html>
